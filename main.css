@@ -1,7 +1,6 @@
 /* ADD YOUR STYLES HERE */
 
 * {
-
 	box-sizing: border-box;
 }
 /* Horizontal and vertical centering */
@@ -160,10 +159,6 @@
 	font-size: .75em;
 }
 
-.container {
-	/*margin: 10px;*/
-}
-
 .container:after{
 	content: "";
 	display: table;
@@ -179,22 +174,25 @@
 }
 
 .tabs li {
-	float: left;
+	display: inline-block;
 
-	padding: 5px 10px;
 	margin: 0 10px;
 
 	border-top: 1px solid #869dff;
 	border-left: 1px solid #869dff;
 	border-right: 1px solid #869dff;
+
 	border-radius: 5px 5px 0 0;
+
 }
 
 .tabs li a {
 	text-decoration: none;
 	font-weight: 700;
+	color: blue;
+	line-height: 1.5em;
+	padding: 8px 10px;
 
-	color: blue;	
 }
 
 .tabs-content {
@@ -209,7 +207,9 @@
 
 .tabs .active {
 	background: #fff;
-	border-bottom: white;
+	border-bottom: 1px solid white;
+	position: relative;
+	top: 1px;
 }
 
 
