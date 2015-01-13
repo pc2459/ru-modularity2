@@ -1,4 +1,11 @@
 /* ADD YOUR STYLES HERE */
+
+* {
+
+	box-sizing: border-box;
+}
+/* Horizontal and vertical centering */
+
 .center-multiple{
 	margin: 0 auto;
 	text-align: center;
@@ -19,14 +26,18 @@
 	display: table;
 }
 
-.center-vertical > div {
+.center-vertical-inner {
 	display: table-cell;
 	vertical-align: middle;
 }
 
+/* Horizontal list styling */
+
 .horizontal-list li {
 	display: inline;
 }
+
+/* Button styling */
 
 .big-button {
 
@@ -63,6 +74,8 @@
 	border: 0;
 }
 
+/* Navigation menu styling */
+
 .nav-menu ul {
 	
 	margin: 0;
@@ -95,6 +108,7 @@
 	border-radius: 0 7px 7px 0;
 }
 
+/* Pagination styling */
 
 .pagination li {
 	font-weight: 500;
@@ -128,3 +142,76 @@
 	text-decoration: none;
 	border-bottom: none;
 }
+
+/* Comment stream styling */
+
+.left-float{
+	float: left;
+}
+
+
+.right-float{
+	padding: 10px;
+	overflow: hidden;
+}
+
+.right-float time {
+	color: #ccc;
+	font-size: .75em;
+}
+
+.container {
+	/*margin: 10px;*/
+}
+
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Tab styling */
+
+.tabs {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tabs li {
+	float: left;
+
+	padding: 5px 10px;
+	margin: 0 10px;
+
+	border-top: 1px solid #869dff;
+	border-left: 1px solid #869dff;
+	border-right: 1px solid #869dff;
+	border-radius: 5px 5px 0 0;
+}
+
+.tabs li a {
+	text-decoration: none;
+	font-weight: 700;
+
+	color: blue;	
+}
+
+.tabs-content {
+	padding: 10px;
+	border:1px solid #869dff;
+	border-radius: 5px;
+}
+
+.tabs li div {
+	display: inline;
+}
+
+.tabs .active {
+	background: #fff;
+	border-bottom: white;
+}
+
+
+
+
